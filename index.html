@@ -9,23 +9,19 @@
 <body>
     <section class="formulario">
         <label for="input_nome">Nome:</label>
-        <input type="text" id="input_nome">
+        <input type="text" id="input_nome" required>
     
         <label for="input_email">Email:</label>
-        <input type="text" id="input_email">
+        <input type="email" id="input_email" required>
     
         <label for="input_phone">Telefone:</label>
-        <input type="text" id="input_phone">
+        <input type="tel" id="input_phone" required>
     
-        <button>Salvar</button>
-        <button>Listar</button>
+        <button onclick="salvar()" id="botao_salvar">Salvar</button>
+        <button onclick="listar()" id="botao_listar" disabled>Listar</button>
     </section>
     
-    <section class="lista">
-        <div class="container">
-
-        </div>
-    </section>
+    <section id="lista"></section>
 </body>
 <script src="./script.js"></script>
 </html>
